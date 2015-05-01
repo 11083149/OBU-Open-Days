@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/site.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#confirm").fadeIn();
+    });
+});
+function showhide(){
+	document.getElementById("addcal").style.display = "none";
+}
+</script>
+</head>
+
+<body>
+	<div id="header">
+    	<div id="insidewrapper">
+        	<div>
+				<img src="assets/Brookes logo.png" width="131" height="86" alt="" style="float:left;"/>
+                <form name="gs" method="get" action="" style="float:right; margin-top:27px; width:260px;">
+                	<input id="search" name="search" size="14" placeholder="Search" style="width:90%;" /> 
+                </form>
+                <div style="clear:both;"></div>
+            </div>
+        	<div id="menu">
+        		<ul>
+                	<a href="home.html" class="noncurrentlink"><li class="noncurrent">All Open Days</li></a>
+                    <a href="faculty.html" class="noncurrentlink"><li class="noncurrent">List of Faculties</li></a>
+                    <a href="calendar.html" class="noncurrentlink"><li class="noncurrent">My Calendar</li></a>
+                    <a href="addevent.html" class="currentlink"><li class="current">Staff</li></a>
+                </ul>
+			</div>
+        	
+        </div>
+    </div>
+    <div id="content">
+    
+    	<p style="padding:10px 0px 0px 0px;">You are here: <a href="home.html" style="color:#000BE0;">Home</a> > <a href="addevent.html" style="color:#000BE0;">Staff</a></p>
+    	<div id="smallmenu">
+        <p style="padding:9px 0px 9px 0px; margin:0; font-size:16px; font-weight:900; color:#D10373; border-bottom:1px dotted #ddd; border-top:1px dotted #ddd;">STAFF</p>
+			<ul class="sidenav">
+            	<li><b><a href="">Add Event</a></b></li>
+                <li><a href="">Edit Event</a></li>
+            </ul>
+        </div>
+   	  	<div id="page">
+            	<p class="title"><span>Add Event</span></p>
+                <table style="padding:7px;">
+                   	<tr>
+                       	<td style="vertical-align:top;"><p>Date: </p></td><td><p><input type="text" placeholder="DD/MM/YYYY" /></p></td>
+                    </tr>
+                    <tr>
+                   		<td style="vertical-align:top;"><p>Time: </p></td><td><p><input type="text" placeholder="HH:MM" /></p></td>
+                    </tr>
+                    <tr>
+                  		<td style="vertical-align:top;"><p>Location: </p></td><td><p><input type="text" placeholder="E.g. Headington Campus"/></p></td>
+                    </tr>
+                    <tr>
+                   		<td style="vertical-align:top;"><p>Description: </p></td><td><p><textarea></textarea></p></td>
+                    </tr>
+                    <tr>
+                       	<td style="vertical-align:top;"><p><button id="addcal" style="padding:7px;" onClick="showhide()">DONE</button></p></td>
+                    </tr>
+                </table>
+                <div id="confirm" style="display:none;">
+                	<p class="check">&#10004;</p><p class="checkdesc">Event has been added!</p>
+                </div>
+			</div>
+		</div>
+            
+            
+		
+		
+    
+</body>
+</html>

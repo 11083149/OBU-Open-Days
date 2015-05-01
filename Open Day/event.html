@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/site.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#confirm").fadeIn();
+		});
+});
+
+function showhide(){
+	document.getElementById("addcal").style.display = "none";
+}
+</script>
+</head>
+
+<body>
+	<div id="header">
+    	<div id="insidewrapper">
+        	<div>
+				<img src="assets/Brookes logo.png" width="131" height="86" alt="" style="float:left;"/>
+                <form name="gs" method="get" action="" style="float:right; margin-top:27px; width:260px;">
+                	<input id="search" name="search" size="14" placeholder="Search" style="width:90%;" /> 
+                </form>
+                <div style="clear:both;"></div>
+            </div>
+        	<div id="menu">
+        		<ul>
+                	<a href="home.html" class="currentlink"><li class="current">All Open Days</li></a>
+                    <a href="faculty.html" class="noncurrentlink"><li class="noncurrent">List of Faculties</li></a>
+                    <a href="calendar.html" class="noncurrentlink"><li class="noncurrent">My Calendar</li></a>
+                    <a href="addevent.html" class="noncurrentlink"><li class="noncurrent">Staff</li></a>
+                </ul>
+			</div>
+        	
+        </div>
+    </div>
+    <div id="content">
+    	<p style="padding:10px 0px 0px 0px;">You are here: <a href="home.html" style="color:#000BE0;">Home</a> > <a href="event.html" style="color:#000BE0;">Open Day 2015</a></p>
+    	<div id="smallmenu">
+        	<p style="padding:9px 0px 9px 0px; margin:0; font-size:16px; font-weight:900; color:#D10373; border-bottom:1px dotted #ddd; border-top:1px dotted #ddd;">OPEN DAY 2015</p>
+				<ul class="sidenav">
+            		<li><a href="">Leave a comment</a></b></li>
+                	<li><a href="">Add to my calendar</a></li>
+            	</ul>
+        	</div>
+   	  		<div id="page">
+            	<div id="eventpic">
+                	<img src="http://www.grey-hare.co.uk/wp-content/uploads/2012/09/Event-management.png">
+                </div>
+            	<p class="title"><span>OPEN DAY 2015</span></p>
+                <div style="float:left">
+                <table style="padding:7px;">
+                	<tr>
+                    	<td style="vertical-align:top;"><p>When: </p></td><td style="vertical-align:top;"><b>
+                    	<p>11<sup>th</sup> May 2015</p></b></td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align:top;"><p>Where: </p></td><td style="vertical-align:top;"><p><b>Oxford Brookes University - Headington Campus</b></p>
+                    						<p>Gipsy Lane, Headington</p>
+                    						<p>Oxford, Oxfordshire</p>
+                    						<p>OX3 0BP</p></td>
+                    </tr>
+                    <tr>
+                    	<td style="vertical-align:top;"><p>Details: </p></td><td style="vertical-align:top;"><p>All faculties will be represented in this event.</p>
+                        																					 <p>Refreshments available.</p></td>
+                    </tr>
+                </table>
+                </div>
+                <div id="gmap" style="float:right; margin-right:1%;">
+                	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.799106080826!2d-1.2245469999999647!3d51.754997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c15c12435c0b%3A0x8ebe64ce703ac01f!2sOxford+Brookes+University!5e0!3m2!1sen!2suk!4v1430315639456" width="300" height="300" frameborder="0" style="border:0"></iframe>
+                </div>
+                <div id="addcal" style="clear:both">
+                	<button style="padding:7px; margin-left:7px;" onClick="showhide()">Add to My Calendar</button>
+                </div>
+                <div id="confirm" style="display:none; clear:both">
+                	<p class="check">&#10004;</p><p class="checkdesc">Event added to your calendar!</p>
+                </div>
+            </div>
+            
+		</div>
+		
+    </div>
+</body>
+</html>
